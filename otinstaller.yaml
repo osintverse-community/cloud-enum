@@ -22,7 +22,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/cloud-enum@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/cloud-enum@sha256:802edba53e630c0597bce340012a0c596ad3f21b913f5491ad99c76d0fbda1b3
   platforms: [linux/amd64, linux/arm64]
   command: ["cloud_enum", "-k", "{keyword}", "--quickscan", "-t", "10"]
   output_format: text
